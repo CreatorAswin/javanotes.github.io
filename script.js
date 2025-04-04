@@ -29,3 +29,9 @@
 
         // Open first accordion by default
         document.querySelector('.accordion-header').click();
+<!-- Place this button at the top of the page -->
+<button onclick="scrollToFooter()" class="scroll-footer-btn">Contact Us</button>
+// Add to script.js
+function scrollToFooter() {
+    document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
+}
