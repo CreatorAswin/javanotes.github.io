@@ -1,6 +1,6 @@
 # Core Java Notes Website
 
-![Website Screenshot](https://i.imgur.com/JK9G5hP.png)
+![Website Screenshot](https://github.com/CreatorAswin/javanotes.github.io/blob/main/webpage.png)
 
 A responsive website containing comprehensive Core Java programming notes with interactive accordion sections and copyable code examples.
 
