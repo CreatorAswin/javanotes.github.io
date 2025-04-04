@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Java Notes - by Aswini Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Core Java Programming Notes</h1>
+            <p>Comprehensive guide to Java programming concepts</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="banner">
+            <h1>Master Core Java</h1>
+            <p>By Aswini Kumar</p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">Introduction to Java</div>
+            <div class="accordion-body">
+                <h2>What is Java?</h2>
+                <p>Java is a high-level, object-oriented programming language developed by Sun Microsystems (now owned by Oracle). It is platform-independent, meaning Java programs can run on any device that has a Java Virtual Machine (JVM).</p>
+                
+                <h3>Features of Java:</h3>
+                <ul>
+                    <li>Simple and easy to learn</li>
+                    <li>Object-oriented</li>
+                    <li>Platform independent</li>
+                    <li>Secure</li>
+                    <li>Multithreaded</li>
+                    <li>High performance</li>
+                </ul>
+                
+                <h3>Hello World Example:</h3>
+                <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code><button class="copy-btn">Copy</button></pre>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">Data Types and Variables</div>
+            <div class="accordion-body">
+                <h2>Java Data Types</h2>
+                <p>Java has two categories of data types: primitive and non-primitive.</p>
+                
+                <h3>Primitive Data Types:</h3>
+                <ul>
+                    <li><strong>byte:</strong> 8-bit integer (-128 to 127)</li>
+                    <li><strong>short:</strong> 16-bit integer (-32,768 to 32,767)</li>
+                    <li><strong>int:</strong> 32-bit integer (-2^31 to 2^31-1)</li>
+                    <li><strong>long:</strong> 64-bit integer (-2^63 to 2^63-1)</li>
+                    <li><strong>float:</strong> 32-bit floating point</li>
+                    <li><strong>double:</strong> 64-bit floating point</li>
+                    <li><strong>boolean:</strong> true or false</li>
+                    <li><strong>char:</strong> 16-bit Unicode character</li>
+                </ul>
+                
+                <h3>Variable Declaration Example:</h3>
+                <pre><code>public class Variables {
+    public static void main(String[] args) {
+        int age = 25;
+        double salary = 50000.50;
+        char grade = 'A';
+        boolean isJavaFun = true;
+        
+        System.out.println("Age: " + age);
+        System.out.println("Salary: " + salary);
+        System.out.println("Grade: " + grade);
+        System.out.println("Is Java fun? " + isJavaFun);
+    }
+}</code><button class="copy-btn">Copy</button></pre>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">Control Flow Statements</div>
+            <div class="accordion-body">
+                <h2>Control Flow in Java</h2>
+                <p>Control flow statements allow you to control the order in which statements are executed in your program.</p>
+                
+                <h3>Types of Control Statements:</h3>
+                <ul>
+                    <li><strong>Decision Making:</strong> if, if-else, switch</li>
+                    <li><strong>Looping:</strong> for, while, do-while</li>
+                    <li><strong>Branching:</strong> break, continue, return</li>
+                </ul>
+                
+                <h3>If-Else Example:</h3>
+                <pre><code>public class IfElseExample {
+    public static void main(String[] args) {
+        int number = 10;
+        
+        if (number > 0) {
+            System.out.println("Number is positive.");
+        } else if (number < 0) {
+            System.out.println("Number is negative.");
+        } else {
+            System.out.println("Number is zero.");
+        }
+    }
+}</code><button class="copy-btn">Copy</button></pre>
+                
+                <h3>For Loop Example:</h3>
+                <pre><code>public class ForLoopExample {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Iteration " + i);
+        }
+    }
+}</code><button class="copy-btn">Copy</button></pre>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">Object-Oriented Programming</div>
+            <div class="accordion-body">
+                <h2>OOP Concepts in Java</h2>
+                <p>Java is an object-oriented programming language that uses four main principles:</p>
+                
+                <h3>OOP Principles:</h3>
+                <ul>
+                    <li><strong>Abstraction:</strong> Hiding implementation details</li>
+                    <li><strong>Encapsulation:</strong> Binding data and methods together</li>
+                    <li><strong>Inheritance:</strong> Creating new classes from existing ones</li>
+                    <li><strong>Polymorphism:</strong> One interface, multiple implementations</li>
+                </ul>
+                
+                <h3>Class and Object Example:</h3>
+                <pre><code>public class Car {
+    // Fields (attributes)
+    String color;
+    String model;
+    int year;
+    
+    // Constructor
+    public Car(String color, String model, int year) {
+        this.color = color;
+        this.model = model;
+        this.year = year;
+    }
+    
+    // Method
+    public void displayInfo() {
+        System.out.println("This is a " + color + " " + model + " from " + year);
+    }
+    
+    public static void main(String[] args) {
+        // Creating an object
+        Car myCar = new Car("Red", "Toyota Camry", 2020);
+        myCar.displayInfo();
+    }
+}</code><button class="copy-btn">Copy</button></pre>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">Inheritance and Polymorphism</div>
+            <div class="accordion-body">
+                <h2>Inheritance in Java</h2>
+                <p>Inheritance allows a class to inherit properties and methods from another class.</p>
+                
+                <h3>Types of Inheritance:</h3>
+                <ul>
+                    <li>Single inheritance</li>
+                    <li>Multilevel inheritance</li>
+                    <li>Hierarchical inheritance</li>
+                    <li>Multiple inheritance (through interfaces)</li>
+                </ul>
+                
+                <h3>Inheritance Example:</h3>
+                <pre><code>// Parent class
+class Animal {
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+// Child class
+class Dog extends Animal {
+    void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+
+public class InheritanceExample {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.eat();  // Inherited method
+        myDog.bark(); // Child class method
+    }
+}</code><button class="copy-btn">Copy</button></pre>
+                
+                <h3>Polymorphism Example:</h3>
+                <pre><code>class Shape {
+    void draw() {
+        System.out.println("Drawing a shape");
+    }
+}
+
+class Circle extends Shape {
+    @Override
+    void draw() {
+        System.out.println("Drawing a circle");
+    }
+}
+
+class Square extends Shape {
+    @Override
+    void draw() {
+        System.out.println("Drawing a square");
+    }
+}
+
+public class PolymorphismExample {
+    public static void main(String[] args) {
+        Shape myShape;
+        
+        myShape = new Circle();
+        myShape.draw(); // Calls Circle's draw()
+        
+        myShape = new Square();
+        myShape.draw(); // Calls Square's draw()
+    }
+}</code><button class="copy-btn">Copy</button></pre>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">Exception Handling</div>
+            <div class="accordion-body">
+                <h2>Exception Handling in Java</h2>
+                <p>Exception handling is a mechanism to handle runtime errors so that normal flow of the application can be maintained.</p>
+                
+                <h3>Keywords for Exception Handling:</h3>
+                <ul>
+                    <li><strong>try:</strong> Block of code to monitor for errors</li>
+                    <li><strong>catch:</strong> Block to handle the exception</li>
+                    <li><strong>finally:</strong> Block that executes regardless of exception</li>
+                    <li><strong>throw:</strong> To explicitly throw an exception</li>
+                    <li><strong>throws:</strong> Declares exceptions a method might throw</li>
+                </ul>
+                
+                <h3>Try-Catch Example:</h3>
+                <pre><code>public class ExceptionExample {
+    public static void main(String[] args) {
+        try {
+            int[] numbers = {1, 2, 3};
+            System.out.println(numbers[5]); // ArrayIndexOutOfBoundsException
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array index is out of bounds!");
+        } finally {
+            System.out.println("This will always execute.");
+        }
+    }
+}</code><button class="copy-btn">Copy</button></pre>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">Collections Framework</div>
+            <div class="accordion-body">
+                <h2>Java Collections Framework</h2>
+                <p>The Java Collections Framework provides a set of interfaces and classes to store and manipulate groups of data as a single unit.</p>
+                
+                <h3>Main Interfaces:</h3>
+                <ul>
+                    <li><strong>List:</strong> Ordered collection (ArrayList, LinkedList)</li>
+                    <li><strong>Set:</strong> Collection of unique elements (HashSet, TreeSet)</li>
+                    <li><strong>Map:</strong> Key-value pairs (HashMap, TreeMap)</li>
+                    <li><strong>Queue:</strong> FIFO ordering (PriorityQueue)</li>
+                </ul>
+                
+                <h3>ArrayList Example:</h3>
+                <pre><code>import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList&lt;String&gt; fruits = new ArrayList&lt;&gt;();
+        
+        // Adding elements
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Orange");
+        
+        // Accessing elements
+        System.out.println("First fruit: " + fruits.get(0));
+        
+        // Iterating through list
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+        }
+    }
+}</code><button class="copy-btn">Copy</button></pre>
+                
+                <h3>HashMap Example:</h3>
+                <pre><code>import java.util.HashMap;
+
+public class HashMapExample {
+    public static void main(String[] args) {
+        HashMap&lt;String, Integer&gt; ages = new HashMap&lt;&gt;();
+        
+        // Adding key-value pairs
+        ages.put("Alice", 25);
+        ages.put("Bob", 30);
+        ages.put("Charlie", 35);
+        
+        // Accessing values
+        System.out.println("Bob's age: " + ages.get("Bob"));
+        
+        // Iterating through map
+        for (String name : ages.keySet()) {
+            System.out.println(name + " is " + ages.get(name) + " years old.");
+        }
+    }
+}</code><button class="copy-btn">Copy</button></pre>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">Multithreading</div>
+            <div class="accordion-body">
+                <h2>Multithreading in Java</h2>
+                <p>Multithreading is a Java feature that allows concurrent execution of two or more parts of a program for maximum utilization of CPU.</p>
+                
+                <h3>Ways to Create Threads:</h3>
+                <ul>
+                    <li>Extending Thread class</li>
+                    <li>Implementing Runnable interface</li>
+                </ul>
+                
+                <h3>Thread Example:</h3>
+                <pre><code>class MyThread extends Thread {
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(Thread.currentThread().getId() + " Value " + i);
+        }
+    }
+}
+
+public class ThreadExample {
+    public static void main(String[] args) {
+        MyThread t1 = new MyThread();
+        MyThread t2 = new MyThread();
+        t1.start();
+        t2.start();
+    }
+}</code><button class="copy-btn">Copy</button></pre>
+                
+                <h3>Runnable Example:</h3>
+                <pre><code>class MyRunnable implements Runnable {
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(Thread.currentThread().getId() + " Value " + i);
+        }
+    }
+}
+
+public class RunnableExample {
+    public static void main(String[] args) {
+        Thread t1 = new Thread(new MyRunnable());
+        Thread t2 = new Thread(new MyRunnable());
+        t1.start();
+        t2.start();
+    }
+}</code><button class="copy-btn">Copy</button></pre>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <h2>Have Questions?</h2>
+            <p>Feel free to reach out for any queries or suggestions.</p>
+            <a href="mailto:aswinikumar@cutmap.ac.in" class="contact-btn">Contact via Email</a>
+            <p>&copy; 2023 Core Java Notes - Aswini Kumar</p>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
